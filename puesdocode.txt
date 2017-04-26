@@ -1,0 +1,31 @@
+function Calculator(){
+  
+  counter = 0;
+  size = prompt("Please enter size of array: ", 5)
+  alert("The array size is ${size} ");
+  var array = [size];
+  
+  while(counter < size)
+  {
+    array.concat(prompt("Please enter the value you would like to be added"));
+    counter++;
+  }
+}
+
+function addArray(array){
+  
+  add = 0;
+		if (array.length() > 0)
+		{
+			for (value = 0; value < array.length; value++)
+			{
+				add += array[value];
+			}
+			
+		string = "The total is %.2f" % (add);
+		}
+		return string;
+}
+
+first = Calculate();
+print(addArray(first.list1));
